@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebStorage с таблицей</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>WebStorage</h1>
+        <table id="dataTable">
+            <thead>
+                <tr>
+                    <th>Ключ</th>
+                    <th>Значение</th>
+                    <th>Удалить</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+        <div class="form-container">
+            <input type="text" id="keyInput" placeholder="Введите ключ" class="input">
+            <input type="text" id="valueInput" placeholder="Введите значение" class="input">
+            <button onclick="saveItem()" class="button save">Сохранить</button>
+            <button onclick="clearStorage()" class="button clear">Очистить хранилище</button>
+        </div>
+    </div>
+</body>
+</html>
